@@ -1,5 +1,15 @@
 # Domoticz
 Projet GNU 2021
+## CAPTEUR D'HUMIDITE
+### Installation
+* Effectuer le branchement suivant:
+* 
+
+
+
+
+
+
 
 
 ## MACHINE HÔTE (PC DISTANT)
