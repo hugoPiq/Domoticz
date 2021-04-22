@@ -1,6 +1,36 @@
 # Domoticz
 Projet GNU 2021
 
+````
+24.09 deg C, 1009.64 hPa, 39.91%
+24.10 deg C, 1009.64 hPa, 39.91%
+24.10 deg C, 1009.64 hPa, 39.88%
+24.11 deg C, 1009.64 hPa, 39.91%
+24.12 deg C, 1009.63 hPa, 39.88%
+24.12 deg C, 1009.64 hPa, 39.90%
+24.13 deg C, 1009.64 hPa, 39.87%
+24.14 deg C, 1009.64 hPa, 39.88%
+24.14 deg C, 1009.64 hPa, 39.88%
+24.14 deg C, 1009.63 hPa, 39.87%
+24.15 deg C, 1009.64 hPa, 39.88%
+24.15 deg C, 1009.64 hPa, 39.86%
+24.16 deg C, 1009.64 hPa, 39.86%
+24.16 deg C, 1009.64 hPa, 39.86%
+24.17 deg C, 1009.64 hPa, 39.85%
+24.17 deg C, 1009.63 hPa, 39.84%
+24.17 deg C, 1009.64 hPa, 39.86%
+24.18 deg C, 1009.64 hPa, 39.85%
+24.18 deg C, 1009.63 hPa, 39.84%
+24.18 deg C, 1009.64 hPa, 39.85%
+24.19 deg C, 1009.63 hPa, 39.84%
+````
+
+Booter la Raspberry Pi.
+```` shell
+$ modprobe i2c-dev
+$ modprobe i2c-bcm2835
+````
+
 
 ## MACHINE HÔTE (PC DISTANT)
 
