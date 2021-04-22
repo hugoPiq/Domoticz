@@ -6,6 +6,7 @@
 * **Hugo Piquard** _alias_ [@hugoPiq](https://github.com/hugoPiq)
 #### Nous sommes en stage dès le 26 avril.
 Projet GNU 2021
+
 ## CAPTEUR D'HUMIDITE
 ### Installation
 * Effectuer le branchement suivant:
@@ -26,10 +27,14 @@ Ce dernier reçoit les données du capteur de pression/humidité et change la co
 
 
 
+### SERVEUR DOMOTICZ
 
-## MACHINE HÔTE (PC DISTANT)
+## Machine hôte (UBUNTU)
+### Lancer l'interface cliente Domoticz :
+On lance un navigateur sur le localhost du client (machine hôte) sur le port Internet : ```127.0.0.1:8080``` pour l'interface client.
+Créer une rubrique température sur Domotics en suivant les instructions 
 
-### Installer le serveur Domoticz sur la machine hôte:
+### Remarque: pour installer le serveur Domoticz sur la machine hôte en local:
 ```curl -sSL install.domoticz.com | sudo bash```
 On suit les instructions du launcher
 ```
@@ -38,9 +43,7 @@ sudo chmod +x domoticz.sh
 ``` 
 Il se met en arrière plan.
 
-### Lancer l'interface cliente Domoticz :
-On lance un navigateur sur le localhost du client (machine hôte) sur le port Internet : ```127.0.0.1:8080``` pour l'interface client.
-Créer une rubrique température sur Domotics en suivant les instructions 
+
 
 
 ### MACHINE CIBLE (RASPBERRY PI)
