@@ -31,12 +31,23 @@ Ce dernier reçoit les données du capteur de pression/humidité et change la co
 
 ## Machine hôte (UBUNTU)
 ### Lancer l'interface cliente Domoticz :
-On lance un navigateur sur le localhost du client (machine hôte) sur le port Internet : ```172.20.11.251:8080``` pour l'interface client.
-Créer une rubrique température sur Domotics en suivant les instructions 
+Lancer un navigateur sur le localhost du client (machine hôte) sur le port Internet : ```172.20.11.251:8080```.
+Créer une rubrique température sur Domotics en suivant les instructions suivantes:
+Pour créer un capteur virtuel, aller dans l'onglet Setup puis dans le menu Hardware. Créer alors un capteur virtuel en indiquant un nom et le type Dummy:
+
+[Github Logo]
+
+Finalement, cliquer sur Create Virtual Sensors et indiquer Temperature comme type:
+
+[Github Logo]
+
+Le nouveau capteur est alors disponible dans l'onglet Temperature de l'interface:
+
+[Github Logo] 
 
 #### Remarque: pour installer le serveur Domoticz sur la machine hôte en local:
 ```curl -sSL install.domoticz.com | sudo bash```
-On suit les instructions du launcher
+Suivre les instructions du launcher.
 ```
 sudo chmod +x domoticz.sh
 ./domoticz.sh
