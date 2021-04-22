@@ -17,7 +17,8 @@ Remarque: Bien mettre les cables d'alimentation des diodes sur les GPIOXX et GPI
 
 * Allumer la Raspberry en branchant cette dernière sur le secteur. Si une des deux LED est allumée, la Raspberry est bien en fonctionnement.
 
-![alt text] https://github.com/hugoPiq/Domoticz/blob/main/ImagePinSwitchON.jpg
+![alt text](https://github.com/hugoPiq/Domoticz/blob/main/ImagePinSwitchON.jpg)
+
 ### Utilisation
 * Si l'humidité est supérieur à 80% , la LED rouge clignote.
 * Sinon la LED verte clignote.
