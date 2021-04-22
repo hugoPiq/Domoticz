@@ -9,25 +9,24 @@ Projet GNU 2021
 
 ## CAPTEUR D'HUMIDITE
 ### Installation
+* Déplacer le binaire ```/bin/domo``` dans ```/etc/init.d/``` de la Raspberry.
 * Effectuer le branchement suivant:
 
 ![alt text](https://github.com/hugoPiq/Domoticz/blob/main/176168470_506479097198002_6097645515706769262_n.jpg)
 
-Remarque: Bien mettre les cables d'alimentation des diodes sur les GPIOXX et GPIOXX. Concernant le capteur, VCC sur PIN2, SCL sur GPIO3, SDA sur GPIO2 et connecter le GROUND. 
+Remarque: Bien mettre les cables d'alimentation des diodes sur les GPI05 et GPIO6. Concernant le capteur, VCC sur PIN2, SCL sur GPIO3, SDA sur GPIO2 et connecter le GROUND. 
 
-* Allumer la Raspberry en branchant cette dernière sur le secteur. Si une des deux LED est allumée, la Raspberry est bien en fonctionnement
+* Allumer la Raspberry en branchant cette dernière sur le secteur. Si une des deux LED est allumée, la Raspberry est bien en fonctionnement.
+
+![alt text](https://github.com/hugoPiq/Domoticz/blob/main/ImagePinSwitchON.jpg)
+
 ### Utilisation
 * Si l'humidité est supérieur à 80% , la LED rouge clignote.
 * Sinon la LED verte clignote.
 
 ## Détails
-Au démérage, le binaire ```/etc/init.d/XXXXXX``` est lancée.
+Au démérage, le binaire ```/etc/init.d/domo``` est lancée.
 Ce dernier reçoit les données du capteur de pression/humidité et change la couleur de la LED en fonction.
-
-
-
-
-
 
 ### SERVEUR DOMOTICZ
 
