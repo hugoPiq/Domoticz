@@ -13,6 +13,8 @@ Projet GNU 2021
 
 ![alt text](https://github.com/hugoPiq/Domoticz/blob/main/176168470_506479097198002_6097645515706769262_n.jpg)
 
+remarque: Bien mettre les cables d'alimentation des diodes sur les GPIO  et GPIO . Concernant le capteur, VCC sur PIN2, SCL sur GPIO3, SDA sur GPIO2 et connecter le GROUND. 
+
 * Allumer la Raspberry en branchant cette dernière sur le secteur. Si une des deux LED est allumée, la Raspberry est bien en fonctionnement
 ### Utilisation
 * Si l'humidité est supérieur à 80% , la LED rouge clignote.
