@@ -31,10 +31,10 @@ Ce dernier reçoit les données du capteur de pression/humidité et change la co
 
 ## Machine hôte (UBUNTU)
 ### Lancer l'interface cliente Domoticz :
-On lance un navigateur sur le localhost du client (machine hôte) sur le port Internet : ```127.0.0.1:8080``` pour l'interface client.
+On lance un navigateur sur le localhost du client (machine hôte) sur le port Internet : ```172.20.11.251:8080``` pour l'interface client.
 Créer une rubrique température sur Domotics en suivant les instructions 
 
-### Remarque: pour installer le serveur Domoticz sur la machine hôte en local:
+#### Remarque: pour installer le serveur Domoticz sur la machine hôte en local:
 ```curl -sSL install.domoticz.com | sudo bash```
 On suit les instructions du launcher
 ```
@@ -42,14 +42,15 @@ sudo chmod +x domoticz.sh
 ./domoticz.sh
 ``` 
 Il se met en arrière plan.
-
-
+Lancer un navigateur sur le localhost ```172.0.0.0:8080```.
 
 
 ### MACHINE CIBLE (RASPBERRY PI)
-
-### Lancer le serveur Domoticz sur la Raspberry Pi (machine cible):
+Le serveur se lance automatiquement sur la Rasberry. Mais nous n'avons configué le serveur (mauvais IP: 0.0.0.0).
+#### Remarque: pour lancer le serveur Domoticz sur la Raspberry Pi (machine cible) avec la bonne adresse IP:
 ````
 /opt/domoticz/domoticz -daemon -www 8080 -sslwww 443
 ````
 Il tourne en arrière plan.
+
+Nous n'avons pas eu le temps de faire le script de commande curl pour envoyer les données du capteur sur le serveur Domoticz.
