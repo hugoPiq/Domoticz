@@ -9,6 +9,7 @@ Projet GNU 2021
 
 ## CAPTEUR D'HUMIDITE
 ### Installation
+* Déplacer le binaire ```/bin/domo``` dans ```/etc/init.d/``` de la Raspberry.
 * Effectuer le branchement suivant:
 
 ![alt text](https://github.com/hugoPiq/Domoticz/blob/main/176168470_506479097198002_6097645515706769262_n.jpg)
@@ -26,11 +27,6 @@ Remarque: Bien mettre les cables d'alimentation des diodes sur les GPI05 et GPIO
 ## Détails
 Au démérage, le binaire ```/etc/init.d/domo``` est lancée.
 Ce dernier reçoit les données du capteur de pression/humidité et change la couleur de la LED en fonction.
-
-
-
-
-
 
 ### SERVEUR DOMOTICZ
 
