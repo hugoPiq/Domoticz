@@ -12,7 +12,7 @@ Projet GNU 2021
 
 ![alt text](https://github.com/hugoPiq/Domoticz/blob/main/176168470_506479097198002_6097645515706769262_n.jpg)
 
-* Allumer la Raspberry en branchant cette dernière sur le secteur. Si une des deux LED est allumé, la Raspberry est bien en fonctionnement
+* Allumer la Raspberry en branchant cette dernière sur le secteur. Si une des deux LED est allumée, la Raspberry est bien en fonctionnement
 ### Utilisation
 * Si l'humidité est supérieur à 80% , la LED rouge clignote.
 * Sinon la LED verte clignote.
