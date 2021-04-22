@@ -3,7 +3,7 @@ Projet GNU 2021
 ## CAPTEUR D'HUMIDITE
 ### Installation
 * Effectuer le branchement suivant:
-* 
+![alt text](https://github.com/hugoPiq/Domoticz/blob/main/176168470_506479097198002_6097645515706769262_n.jpg)
 
 
 
