@@ -20,10 +20,10 @@
  * \include linux_userspace.c
  */
 
-#ifdef __KERNEL__
+// #ifdef __KERNEL__
 #include <linux/i2c-dev.h>
 #include <sys/ioctl.h>
-#endif
+// #endif
 
 /******************************************************************************/
 /*!                         System header files                               */
@@ -36,7 +36,7 @@
 
 /******************************************************************************/
 /*!                         Own header files                                  */
-#include "bme280.h"
+#include "../bme280.h"
 
 /******************************************************************************/
 /*!                               Structures                                  */
@@ -133,7 +133,7 @@ int8_t stream_sensor_data_forced_mode(struct bme280_dev *dev);
 /*!
  * @brief This function starts execution of the program.
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
     struct bme280_dev dev;
 
@@ -154,17 +154,17 @@ int main(int argc, char* argv[])
         exit(1);
     }
 
-#ifdef __KERNEL__
+    /* Make sure to select BME280_I2C_ADDR_PRIM or BME280_I2C_ADDR_SEC as needed */
+    id.dev_addr = BME280_I2C_ADDR_PRIM;
+
+    // #ifdef __KERNEL__
     if (ioctl(id.fd, I2C_SLAVE, id.dev_addr) < 0)
     {
         fprintf(stderr, "Failed to acquire bus access and/or talk to slave.\n");
         exit(1);
     }
 
-#endif
-
-    /* Make sure to select BME280_I2C_ADDR_PRIM or BME280_I2C_ADDR_SEC as needed */
-    id.dev_addr = BME280_I2C_ADDR_PRIM;
+    // #endif
 
     dev.intf = BME280_I2C_INTF;
     dev.read = user_i2c_read;
