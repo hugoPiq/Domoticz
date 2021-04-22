@@ -4,7 +4,7 @@
 #### Auteurs
 * **Estelle Arricau** _alias_ [@estellearrc](https://github.com/estellearrc)
 * **Hugo Piquard** _alias_ [@hugoPiq](https://github.com/hugoPiq)
-
+#### Nous sommes en stage dès le 26 avril.
 Projet GNU 2021
 ## CAPTEUR D'HUMIDITE
 ### Installation
