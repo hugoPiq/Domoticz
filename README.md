@@ -1,10 +1,25 @@
-# Domoticz
+# DOMOTICZ CAPTEUR D'HUMIDITE
+
+#### Date: Avril 2021
+#### Auteurs
+* **Estelle Arricau** _alias_ [@estellearrc](https://github.com/estellearrc)
+* **Hugo Piquard** _alias_ [@hugoPiq](https://github.com/hugoPiq)
+
 Projet GNU 2021
 ## CAPTEUR D'HUMIDITE
 ### Installation
 * Effectuer le branchement suivant:
+
 ![alt text](https://github.com/hugoPiq/Domoticz/blob/main/176168470_506479097198002_6097645515706769262_n.jpg)
 
+* Allumer la Raspberry en branchant cette dernière sur le secteur. Si une des deux LED est allumé, la Raspberry est bien en fonctionnement
+### Utilisation
+* Si l'humidité est supérieur à 80% , la LED rouge clignote.
+* Sinon la LED verte clignote.
+
+## Détails
+Au démérage, le binaire ```/etc/init.d/XXXXXX``` est lancée.
+Ce dernier reçoit les données du capteur de pression/humidité et change la couleur de la LED en fonction.
 
 
 
