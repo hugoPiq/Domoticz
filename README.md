@@ -35,15 +35,15 @@ Lancer un navigateur sur le localhost du client (machine hôte) sur le port Inte
 Créer une rubrique température sur Domotics en suivant les instructions suivantes:
 Pour créer un capteur virtuel, aller dans l'onglet Setup puis dans le menu Hardware. Créer alors un capteur virtuel en indiquant un nom et le type Dummy:
 
-[Github Logo]
+![alt text]https://github.com/pblottiere/embsys/blob/master/labs/rpi3/imgs/domoticz_dummy.png
 
 Finalement, cliquer sur Create Virtual Sensors et indiquer Temperature comme type:
 
-[Github Logo]
+![alt text]https://github.com/pblottiere/embsys/blob/master/labs/rpi3/imgs/domoticz_virtual.png
 
 Le nouveau capteur est alors disponible dans l'onglet Temperature de l'interface:
 
-[Github Logo] 
+![alt text]https://github.com/pblottiere/embsys/blob/master/labs/rpi3/imgs/domoticz_temp0.png
 
 #### Remarque: pour installer le serveur Domoticz sur la machine hôte en local:
 ```curl -sSL install.domoticz.com | sudo bash```
